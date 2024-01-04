@@ -7,6 +7,8 @@ import Work from "./components/work/Work";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Navigation from "./components/nav/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function App() {
   return (
