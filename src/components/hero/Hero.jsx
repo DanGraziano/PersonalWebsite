@@ -1,31 +1,35 @@
-import Logo from '../../assets/dan-photo.jpg'; // Import the JPEG image
 import React from 'react';
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FcGlobe } from "react-icons/fc";
 import { MdOutlineSchool } from "react-icons/md";
-
+import Logo from '../../assets/dan-photo.jpg';
 
 export default function Hero() {
     return (
-        <div className="d-flex flex-column align-items-center mt-4">
-            <img src={Logo} height={200} width={200} alt="Dan Graziano" className="rounded-circle mx-auto d-block mt-4" />
-            {/* TODO - move logo to left of text box */}
-            <h1 className="text-5xl font-bold text-center m-2">Hi, I'm Dan.</h1>
-            <p className="text-2xl text-center mb-2">I'm a Full Stack Software Engineer.</p>
-            <div className='about-text-container'>
-                <div className="location-text"><FcGlobe /> Portland, ME</div> 
-                <div className="education-text"><MdOutlineSchool /> MS in Computer Science</div> 
-                <div className="location-text"><MdOutlineSchool /> Northeastern University</div> 
-            </div>
+        <Container className="hero-container">
+            <Row className="justify-content-center align-items-center">
+       
+                <Col xs={12} md={4} className="text-center">
+                    <img src={Logo} height={230} width={230} alt="Dan Graziano" className="rounded-circle" />
+                </Col>
 
-            <div className="social-logos m-2">
-                <a className="m-2" href="https://github.com/DanGraziano"><FaGithub /></a>
-                <a className="m-2" href="https://www.linkedin.com/in/danielgraziano/"><FaLinkedinIn /></a>
-            </div>
+                <Col xs={6} md={4}>
+                    <h1 className="hello-text">Hi, I'm Dan.</h1>
+                    <h5 className="sub-hed-text">I'm a Full Stack Software Engineer.</h5>
+                    <div className="location-text d-flex align-items-center mt-3"><FcGlobe /> Portland, ME</div> 
+                    <div className="education-text d-flex align-items-center my-1"><MdOutlineSchool /> MSCS, Northeastern University</div> 
+                    <div className="education-text d-flex align-items-center my-1"><MdOutlineSchool /> BA, Sacred Heart University</div> 
+                    <a href="https://github.com/DanGraziano" className=""><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/danielgraziano/" className="m-3"><FaLinkedinIn /></a>
+                </Col>
 
-            <div className="contact-container">
-                <button className="btn btn-primary mb-4 mt-3 mb-lg-0">Reach out</button>
-            </div>
-        </div>
+                <Row className="justify-content-center">
+                    <Col className="text-center my-4">
+                        <Button variant="primary">Reach out</Button>
+                    </Col>
+            </Row>
+            </Row>
+        </Container>
     );
 }
