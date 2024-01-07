@@ -1,0 +1,16 @@
+.vertical-timeline::before {
+    background: black !important;
+}
+  
+.date {
+    color: rgb(0, 0, 0);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* or any specific size */
+    height: 100%; /* or any specific size */
+}
+
