@@ -1,8 +1,10 @@
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import Placeholder from '../../assets/holder.svg';
+import { Element } from 'react-scroll';
 
 export default function Projects() {
     return (
+        <Element name="projects" className="project-section">
         <Container fluid className="projects-container">
         <Row className="justify-content-center">
             <Col xs={12}>
@@ -70,5 +72,6 @@ export default function Projects() {
                 </Col>
             </Row>
         </Container>
+        </Element>
     );
 }

@@ -63,6 +63,17 @@ export const technologies = {
 };
 
 export const experiences = [
+
+  {
+    title: "Completed Master's in Computer Science",
+    company_name: "Northeastern University",
+    company_link: "https://www.northeastern.edu/",
+    icon: northeastern,
+    date: "April 2024 (Expected)",
+    bullets: [],
+    technologies: []
+  },
+
     {
         title: "Graduate Teaching Assistant",
         company_name: "Northeastern University",
@@ -79,16 +90,6 @@ export const experiences = [
             technologies.java,
             technologies.python,
         ],
-    },
-
-    {
-      title: "Complete Master's in Computer Science (Expected)",
-      company_name: "Northeastern University",
-      company_link: "https://www.northeastern.edu/",
-      icon: northeastern,
-      date: "April 2024",
-      bullets: [],
-      technologies: []
     },
 
     {
@@ -111,7 +112,7 @@ export const experiences = [
     },
 
     {
-      title: "Start Master's in Computer Science",
+      title: "Began Master's in Computer Science",
       company_name: "Northeastern University",
       company_link: "https://www.northeastern.edu/",
       icon: northeastern,
@@ -128,15 +129,12 @@ export const experiences = [
           "Collaborated across teams and practice groups to provide strategic communication support and assistance to industry-leading clients, including AT&T, Fitbit, and Salesforce.",
           "Authored press releases, media pitches, blog posts, executive op-eds, and in-depth reports to highlight company data, industry trends, and company milestones.",
           "Partnered with public relations, marketing, engineering, and legal teams to internally test, validate, and publicly launch more than a dozen new Fitbit products, digital health initiatives, and other high-profile campaigns.",
-          "Led external public relations and communication, driving global brand recognition and awareness by developing and executing a comprehensive PR strategy that maximized earned placements and coverage in top media outlets.",
-          "Conducted media training for C-suite executives and other company spokespeople ahead of interviews and speaking arrangements, and acted as a spokesperson and point of contact for all media inquiries.",
         ],
         technologies: []
     },
 
     {
         title: "Technology Journalist",
-        company_name: "CNET",
         company_link: "https://www.cnet.com/",
         icon: cnet,
         date: "September 2011 - April 2017",
