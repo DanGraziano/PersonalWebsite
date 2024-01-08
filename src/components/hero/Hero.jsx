@@ -7,7 +7,7 @@ import { Element, Link } from 'react-scroll';
 import './Hero.css';
 import {ReactComponent as LinkedIn} from '../../assets/linkedin.svg';
 import {ReactComponent as Github} from '../../assets/github.svg';
-
+import { FaAnglesDown } from "react-icons/fa6";
 
 export default function Hero() {
     return (
@@ -42,13 +42,27 @@ export default function Hero() {
                                 activeClass="navbar-active-link"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-40}
                                 duration={500}
                                 to="contact"
                             >
-                            <Button variant="primary reach-out-button">Reach out</Button>
+                            <Button variant="primary reach-out-button">Let's talk</Button>
                             </Link>
                         </Col>
+                </Row>
+                <Row>
+                    <Col className="text-center scroll-container">
+                        <Link
+                            activeClass="navbar-active-link"
+                            spy={true}
+                            smooth={true}
+                            offset={-40}
+                            duration={500}
+                            to="about"
+                        >
+                            <FaAnglesDown className="scroll-down" />
+                        </Link>
+                    </Col>
                 </Row>
             </Container>
         </Element>

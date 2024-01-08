@@ -1,14 +1,15 @@
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import { Element } from 'react-scroll';
+import './Contact.css';
 
 
 export default function Contact() {
     return (
-        <Element name="contact" className="contact-section my-5">
+        <Element name="contact" className="contact-section">
             <Container className="contact-container">
                 <Row className="justify-content-center m-4">
                     <Col xs={12} className="text-center">
-                        <h2 className="m-5">Contact</h2>
+                        <h2 className="mb-5">Contact</h2>
                     </Col>
                 </Row>
 

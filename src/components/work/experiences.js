@@ -31,7 +31,7 @@ export const technologies = {
       backCol: "#61DBFB",
     },
     mySQL: {
-      name: "mySQL",
+      name: "MySQL",
       textCol: "#FFFFFF",
       backCol: "#A91D22",
     },
@@ -60,6 +60,11 @@ export const technologies = {
         textCol: "#FFFFFF",
         backCol: "#DD1B16",
       },
+      mongodb: {
+        name: "MongoDB",
+        textCol: "#FFFFFF",
+        backCol: "#DD1B16",
+      },
 };
 
 export const experiences = [
@@ -71,7 +76,15 @@ export const experiences = [
     icon: northeastern,
     date: "April 2024 (Expected)",
     bullets: [],
-    technologies: []
+    technologies: [
+      technologies.java,
+      technologies.python,
+      technologies.c,
+      technologies.android,
+      technologies.mySQL,
+      technologies.firebase,
+      technologies.mongodb,
+    ]
   },
 
     {

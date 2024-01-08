@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Element } from 'react-scroll';
+import './About.css';
 
 export default function About() {
     return (
@@ -8,7 +9,7 @@ export default function About() {
             <Container fluid className="about-container">
                 <Row className="justify-content-center">
                     <Col xs={12} md={8} lg={6}>
-                        <h1 className="text-center mt-5 about-section-title">
+                        <h1 className="text-center about-section-title">
                             <span className="about-section-title-color">About</span>
                         </h1>
                     </Col>

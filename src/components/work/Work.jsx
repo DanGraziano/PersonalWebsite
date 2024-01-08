@@ -10,9 +10,9 @@ export default function WorkExperience() {
     return (
     <Element name="work" className="work-section">
         <Container>
-            <Row className="justify-content-center m-4">
+            <Row className="justify-content-center">
                 <Col xs={12} className="text-center">
-                    <h2 className="m-5">Work Experience</h2>
+                    <h2 className="mb-5">Work Experience</h2>
                 </Col>
             </Row>
 

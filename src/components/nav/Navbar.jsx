@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 export default function Navigation() {
   return (
-      <Navbar expand="lg" className="bg-black" variant="dark" fixed="top">
+      <Navbar expand="lg" className="bg-light" variant="light" fixed="top">
         <Container className="navbar-container">
           <Navbar.Brand>
             
@@ -34,7 +34,7 @@ export default function Navigation() {
                 to="about" 
                 spy={true} 
                 smooth={true} 
-                offset={-70} 
+                offset={-50} 
                 duration={500} 
                 className="nav-link">
                 About
@@ -44,7 +44,7 @@ export default function Navigation() {
                 to="projects" 
                 spy={true} 
                 smooth={true} 
-                offset={-70} 
+                offset={-40} 
                 duration={500} 
                 className="nav-link">
                 Projects
@@ -54,7 +54,7 @@ export default function Navigation() {
                 to="work" 
                 spy={true} 
                 smooth={true} 
-                offset={-60} 
+                offset={-40} 
                 duration={500} 
                 className="nav-link">
                 Work
