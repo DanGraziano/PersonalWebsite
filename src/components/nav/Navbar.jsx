@@ -54,7 +54,7 @@ export default function Navigation() {
                 to="work" 
                 spy={true} 
                 smooth={true} 
-                offset={-70} 
+                offset={-60} 
                 duration={500} 
                 className="nav-link">
                 Work
