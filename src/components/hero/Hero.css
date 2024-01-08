@@ -1,0 +1,30 @@
+.hero-container {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+  
+.image-column {
+    width: 100%;
+}
+
+.text-column {
+    width: 100%;
+}
+
+.hero-section-button {
+    padding: 15px 20px;
+}
+
+.reach-out-button {
+    cursor: pointer;
+}
+
+.sub-hed-text, .hello-text {
+    text-align: center;
+}
+
+.icon-container {
+    text-align: center;
+}
