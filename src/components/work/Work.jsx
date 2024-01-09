@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
-import { experiences } from './experiences.js';
+import { experiences } from '../../data.js';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './Work.css';
@@ -50,9 +50,16 @@ export default function WorkExperience() {
                             </p>
                             <p>
                                 {exp.technologies.map((tech, index) => (
-                                    <span key={index} className="badge bg-primary mx-1 my-1">
-                                        {tech.name}
-                                    </span>
+                                    <p 
+                                        key={index} 
+                                        className="badge px-3 py-1 me-2 tech-badge"
+                                        style={{ 
+                                            background: tech.backCol,
+                                            color: tech.textCol,
+                                        }}
+                                        >
+                                    {tech.name}
+                                    </p>
                                 ))}
                             </p>
                             </VerticalTimelineElement>

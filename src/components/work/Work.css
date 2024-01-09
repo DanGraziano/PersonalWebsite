@@ -23,4 +23,7 @@
     height: 100%;
 }
 
-
+.tech-badge {
+    border-radius: 40% !important;
+    font-size: .70em !important
+}

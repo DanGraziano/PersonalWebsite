@@ -1,8 +1,11 @@
-import cnet from '../../assets/cnet.png';
-import fh from '../../assets/FH-logo.png';
-import northeastern from '../../assets/neu-logo.png';
-import survue from '../../assets/survue-logo.png';
-
+import cnet from './assets/cnet.png';
+import fh from './assets/FH-logo.png';
+import northeastern from './assets/neu-logo.png';
+import survue from './assets/survue-logo.png';
+import Placeholder from './assets/holder.svg';
+import RhythmRun from './assets/RhythmRun.png';
+import pricetracker from './/assets/pricetracker.png';
+import portland_brewery from './assets/portland_brewery.jpg';
 
 export const technologies = {
     html: {
@@ -32,38 +35,38 @@ export const technologies = {
     },
     mySQL: {
       name: "MySQL",
-      textCol: "#FFFFFF",
-      backCol: "#A91D22",
+      textCol: "#F29111",
+      backCol: "#00758F",
     },
     python: {
       name: "Python",
-      textCol: "#FFFFFF",
-      backCol: "#FF9900",
+      textCol: "#ffde57",
+      backCol: "#4584b6",
     },
     java: {
         name: "Java",
-        textCol: "#FFFFFF",
-        backCol: "#007ACC",
+        textCol: "#C41E3A",
+        backCol: "#5382a1",
       },
       android: {
         name: "Android",
-        textCol: "#FFFFFF",
-        backCol: "#DD1B16",
+        textCol: "#073042",
+        backCol: "#3DDC84",
       },
       firebase: {
         name: "Firebase",
-        textCol: "#FFFFFF",
-        backCol: "#DD1B16",
+        textCol: "#000000",
+        backCol: "#FFA611",
       },
       c: {
         name: "C",
         textCol: "#FFFFFF",
-        backCol: "#DD1B16",
+        backCol: "#283593",
       },
       mongodb: {
         name: "MongoDB",
-        textCol: "#FFFFFF",
-        backCol: "#DD1B16",
+        textCol: "#00ED64",
+        backCol: "#001E2B",
       },
 };
 
@@ -80,10 +83,16 @@ export const experiences = [
       technologies.java,
       technologies.python,
       technologies.c,
+      technologies.javascript,
+      technologies.html,
+      technologies.css,
+      technologies.bootstrap,
+      technologies.react,
       technologies.android,
       technologies.mySQL,
       technologies.firebase,
       technologies.mongodb,
+
     ]
   },
 
@@ -158,3 +167,38 @@ export const experiences = [
         technologies: []
       },
   ];
+
+export const projectsData = [
+    {
+        title: "E-Commerce Price Tracker",
+        description: "A price tracking tool to automatically scrape product and pricing information from select retail websites and upload the data to a Google spreadsheet to allow for deeper analysis.",
+        imageUrl: pricetracker, 
+        link: "",
+        technologies: [
+          technologies.python,
+        ]
+    },
+
+    {
+        title: "RhythmRun Android App",
+        description: "An Android running app that can measure time, pace, and distance, and is designed to help athletes maintain a more consistent cadence by implementing a built-in metronome.",
+        imageUrl: RhythmRun, 
+        link: "https://github.com/DanGraziano/RhythmRun",
+        technologies: [
+          technologies.java,
+          technologies.android,
+          technologies.firebase,
+        ]
+    },
+
+    {
+        title: "Portland Brewery Tour",
+        description: "A Python script that allows users to find the shortest walking distance to breweries in Portland, Maine.",
+        imageUrl: portland_brewery, 
+        link: "https://github.com/DanGraziano/most-efficient-bar-crawl-in-Portland-ME",
+        technologies: [
+          technologies.python,
+        ]
+    },
+];
+
