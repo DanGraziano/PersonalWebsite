@@ -25,9 +25,9 @@ export default function Hero() {
                     <Col className="text-column">
                         <h1 className="hello-text">Hi, I'm Dan.</h1>
                         <h5 className="sub-hed-text">I'm a Full Stack Software Engineer.</h5>
-                        <div className="location-text mt-3 text-center"><FcGlobe /> Portland, ME</div> 
+                        <div className="location-text mt-3 text-center globe"><FcGlobe /> Portland, ME</div> 
                         <div className="education-text my-1 text-center" ><MdOutlineSchool /> MSCS, Northeastern University</div> 
-                        <div className="education-text text-center"><MdOutlineSchool /> BA, Sacred Heart University</div> 
+                        <div className="education-text text-center school"><MdOutlineSchool /> BA, Sacred Heart University</div> 
                     </Col>
                 </Row>
                     <Row>
