@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import './Navbar.css';
 
 export default function Navigation() {
   return (
@@ -34,7 +35,7 @@ export default function Navigation() {
                 to="about" 
                 spy={true} 
                 smooth={true} 
-                offset={-50} 
+                offset={-120} 
                 duration={500} 
                 className="nav-link">
                 About
@@ -64,7 +65,7 @@ export default function Navigation() {
                 to="contact" 
                 spy={true} 
                 smooth={true} 
-                offset={-70} 
+                offset={-30} 
                 duration={500} 
                 className="nav-link">
                 Contact

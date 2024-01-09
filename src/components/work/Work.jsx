@@ -21,7 +21,7 @@ export default function WorkExperience() {
                     return (
                         <VerticalTimelineElement
                             contentStyle={{
-                                background: "#1d1836",
+                                background: "#3c0640",
                                 color: "#fff",
                             }}
                             contentArrowStyle={{ borderRight: '10px solid  rgb(33, 150, 243)' }}
@@ -34,7 +34,7 @@ export default function WorkExperience() {
                                         <img
                                             src={exp.icon}
                                             alt={exp.company_name}
-                                            className="img-fluid" // Use Bootstrap's class for responsive images
+                                            className="img-fluid"
                                         />
                                 </a>
                             }

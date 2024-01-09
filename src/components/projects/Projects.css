@@ -1,4 +1,11 @@
 .projects-section {
+  background-image: url('../../assets/backgrounds/double-spiral.png');
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.projects-container {
     padding-top: 100px; 
     padding-bottom: 100px;
   }

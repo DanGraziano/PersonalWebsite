@@ -42,7 +42,7 @@ export default function Hero() {
                                 activeClass="navbar-active-link"
                                 spy={true}
                                 smooth={true}
-                                offset={-40}
+                                offset={-30}
                                 duration={500}
                                 to="contact"
                             >
@@ -56,7 +56,7 @@ export default function Hero() {
                             activeClass="navbar-active-link"
                             spy={true}
                             smooth={true}
-                            offset={-40}
+                            offset={-120}
                             duration={500}
                             to="about"
                         >

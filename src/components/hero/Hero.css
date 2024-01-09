@@ -4,6 +4,15 @@
     flex-direction: column; 
     justify-content: center;
 }
+
+.hero-section {
+    background-image: url('../../assets/backgrounds/spiral.png');
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    padding-top: 30px;
+}
+
+
   
 .image-column {
     width: 100%;
