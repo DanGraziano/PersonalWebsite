@@ -47,7 +47,7 @@
 
 
 .dark-theme .vertical-timeline::before {
-    background: white !important; /* Or any color you want for dark mode */
+    background: white !important;
     box-shadow: 5px 3px 8px rgb(42, 6, 205);
 }
   

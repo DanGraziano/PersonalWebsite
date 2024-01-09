@@ -5,8 +5,6 @@ export default function Footer() {
         <footer className="page-footer font-small">
         <div className="footer-text text-center">
             <p>Copyright &copy; 2024 Dan Graziano</p>
-            {/* TODO - Maybe add social logos here? */}
-
         </div>
         </footer>
     )
