@@ -4,9 +4,15 @@ import './Projects.css';
 import { projectsData } from '../../data.js';
 
 
-export default function Projects() {
+export default function Projects({ darkMode }) {
+
+    let darkClassName = '';
+    if (darkMode) {
+      darkClassName += 'dark-theme';
+    }
+
     return (
-        <Element name="projects" className="projects-section">
+        <Element name="projects" className={`projects-section ${darkClassName}`}>
             <Container fluid className="projects-container">
             <Row className="justify-content-center">
                 <Col xs={12}>

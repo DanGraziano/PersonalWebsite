@@ -12,6 +12,12 @@
     padding-top: 30px;
 }
 
+.dark-theme .hero-section {
+    background-image: url('../../assets/backgrounds/dark-mode-double-spiral-flipped.png');
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
 
 .globe {
     margin-right: 133px;

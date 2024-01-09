@@ -15,11 +15,11 @@ export default function App() {
   return (
     <div className="App">
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Hero />
-      <About />
-      <Projects />
+      <Hero darkMode={darkMode}/>
+      <About darkMode={darkMode}/>
+      <Projects darkMode={darkMode}/>
       <Work darkMode={darkMode} />
-      <Contact />
+      <Contact darkMode={darkMode}/>
       <Footer />
     </div>
 

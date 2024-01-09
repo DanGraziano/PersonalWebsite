@@ -3,9 +3,15 @@ import { Element } from 'react-scroll';
 import './Contact.css';
 
 
-export default function Contact() {
+export default function Contact({ darkMode }) {
+
+    let darkClassName = '';
+    if (darkMode) {
+      darkClassName += 'dark-theme';
+    }
+
     return (
-        <Element name="contact" className="contact-section">
+        <Element name="contact" className={`contact-section ${darkClassName}`}>
             <Container className="contact-container">
                 <Row className="justify-content-center m-4">
                     <Col xs={12} className="text-center">

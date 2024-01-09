@@ -3,9 +3,13 @@ import { Container, Row, Col, Card} from 'react-bootstrap';
 import { Element } from 'react-scroll';
 import './About.css';
 
-export default function About() {
+export default function About({ darkMode }) {
+    let darkClassName = '';
+    if (darkMode) {
+      darkClassName += 'dark-theme';
+    }
     return (
-        <Element name="about" className="about-section">
+        <Element name="about" className={`about-section ${darkClassName}`}>
             <Container fluid className="about-container">
                 <Row className="justify-content-center">
                     <Col xs={12} md={8} lg={6}>

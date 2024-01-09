@@ -2,7 +2,14 @@
     background-image: url('../../assets/backgrounds/spiral.png');
     background-repeat: no-repeat; 
     background-attachment: fixed;
-  }
+}
+
+.dark-theme .about-section {
+  background-image: url('../../assets/backgrounds/dark-mode-double-spiral-flipped.png');
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
   
 
 .card-style {

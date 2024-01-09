@@ -6,12 +6,29 @@ import Logo from '../../assets/dan-photo.jpg';
 import { Element, Link } from 'react-scroll';
 import './Hero.css';
 import {ReactComponent as LinkedIn} from '../../assets/linkedin.svg';
-import {ReactComponent as Github} from '../../assets/github.svg';
+import {ReactComponent as GithubLight} from '../../assets/github-white.svg';
+import {ReactComponent as GithubDark} from '../../assets/github.svg';
 import { FaAnglesDown } from "react-icons/fa6";
 
-export default function Hero() {
+export default function Hero({ darkMode }) {
+
+    const toggleGitHubIcon = () => {
+        if (darkMode) {
+          return <GithubLight />;
+        } 
+        else {
+          return <GithubDark />;
+        }
+    }
+
+    let darkClassName = '';
+    if (darkMode) {
+      darkClassName += 'dark-theme';
+    }
+      
+      
     return (
-        <Element name="hero" className="hero-section">
+        <Element name="hero" className={`hero-section ${darkClassName}`}>
             <Container className="hero-container">
                 <Row className="justify-content-center align-items-center">
         
@@ -32,7 +49,7 @@ export default function Hero() {
                 </Row>
                     <Row>
                         <div className="icon-container text-center my-2">
-                            <a href="https://github.com/DanGraziano" className ="logo" ><Github /></a>
+                            <a href="https://github.com/DanGraziano" className ="logo" >{toggleGitHubIcon()}</a>
                             <a href="https://www.linkedin.com/in/danielgraziano/" className="logo"><LinkedIn /></a>
                         </div>
                     </Row>
