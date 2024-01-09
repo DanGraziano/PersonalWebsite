@@ -1,3 +1,25 @@
 .nav-link {
     cursor: pointer;
+    color:rgb(0, 0, 0) !important;
+}
+
+.dark-theme .nav-link {
+    color:rgb(255, 255, 255) !important;
+}
+
+.navbar {
+    box-shadow: .5px .5px 10px rgb(0, 0, 0);
+}
+
+
+.dark-theme .navbar {
+    box-shadow: .5px .5px 10px rgb(42, 6, 205);
+}
+
+.dark-theme .nav-link:hover {
+    color: rgb(237, 229, 0) !important;
+}
+
+.nav-link:hover {
+    font-weight: bolder;
 }

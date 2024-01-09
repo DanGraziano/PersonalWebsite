@@ -33,7 +33,7 @@ export default function Hero({ darkMode }) {
                 <Row className="justify-content-center align-items-center">
         
                     <Col className="text-center image-column mb-3">
-                        <img src={Logo} height={230} width={230} alt="Dan Graziano" className="rounded-circle" />
+                        <img src={Logo} height={230} width={230} alt="Dan Graziano" className="rounded-circle hero-image" />
                     </Col>
                 </Row>
 

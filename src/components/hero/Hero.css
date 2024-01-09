@@ -24,7 +24,7 @@
 }
 
 .school {
-    margin-right: 23px;
+    margin-right: 25px;
 }
   
 .image-column {
@@ -37,6 +37,15 @@
 
 .reach-out-button {
     cursor: pointer;
+    background-color: #3c0640 !important;
+    border: 1px solid #3c0640 !important;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.dark-theme .reach-out-button {
+    background-color: #3c0640 !important;
+    border: 1px solid #3c0640 !important;
+    box-shadow: 3px 3px 10px rgb(42, 6, 205);
 }
 
 .sub-hed-text, .hello-text {
@@ -75,4 +84,12 @@
     50% {
         transform: translateY(-10px);
     }
+}
+
+.hero-image {
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.dark-theme .hero-image {
+    box-shadow: 3px 3px 10px rgb(42, 6, 205);
 }

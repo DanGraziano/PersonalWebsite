@@ -8,8 +8,10 @@ import { Element } from 'react-scroll';
 
 export default function Work({ darkMode }) {
     let darkClassName = '';
+    let boxShadow = "3px 3px 10px rgb(0, 0, 0)";
     if (darkMode) {
       darkClassName += 'dark-theme';
+      boxShadow = "3px 3px 10px rgb(42, 6, 205)";
     }
   
     return (
@@ -25,9 +27,11 @@ export default function Work({ darkMode }) {
                 {experiences.map((exp) => {
                     return (
                         <VerticalTimelineElement
+                        className="custom-card-class"
                             contentStyle={{
                                 background: "#3c0640",
                                 color: "#fff",
+                                boxShadow: boxShadow,
                             }}
                             contentArrowStyle={{ borderRight: '10px solid  rgb(33, 150, 243)' }}
                             date={exp.date}

@@ -25,7 +25,7 @@ export default function Contact({ darkMode }) {
 
                         <Form.Group className="mb-3" controlId="formName">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" name="firstName" placeholder="Enter your name" required value={FormData.firstName} />
+                            <Form.Control type="text" name="name" placeholder="Enter your name" required value={FormData.firstName} />
                         </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -39,7 +39,7 @@ export default function Contact({ darkMode }) {
                         </Form.Group>
 
                     <div className="d-grid gap-2 mt-4">
-                        <button className="btn btn-primary" type="submit" >Reach out</button>
+                        <button className="btn btn-primary reach-out-button" type="submit" >Reach out</button>
                     </div>
                     
                     </Form>

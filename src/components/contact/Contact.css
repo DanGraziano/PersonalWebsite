@@ -16,3 +16,24 @@
     padding-top: 100px; 
     padding-bottom: 100px;
   }
+
+  .reach-out-button {
+    cursor: pointer;
+    background-color: #3c0640 !important;
+    border: 1px solid #3c0640 !important;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.dark-theme .reach-out-button {
+    background-color: #3c0640 !important;
+    border: 1px solid #3c0640 !important;
+    box-shadow: 3px 3px 10px rgb(42, 6, 205);
+}
+
+#formName, #formBasicEmail, #formMessage {
+  box-shadow: 3px 3px 5px rgb(0, 0, 0) !important;
+}
+
+.dark-theme #formName, .dark-theme #formBasicEmail, .dark-theme #formMessage {
+  box-shadow: 3px 3px 10px rgb(42, 6, 205) !important;
+}

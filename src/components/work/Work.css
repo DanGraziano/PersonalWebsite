@@ -14,6 +14,7 @@
 
 .vertical-timeline::before {
     background: black !important;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
 }
 
 .icon-container {
@@ -44,6 +45,9 @@
     background-color: transparent !important;
 }
 
+
 .dark-theme .vertical-timeline::before {
-    background: #fff !important; /* Or any color you want for dark mode */
+    background: white !important; /* Or any color you want for dark mode */
+    box-shadow: 5px 3px 8px rgb(42, 6, 205);
 }
+  
