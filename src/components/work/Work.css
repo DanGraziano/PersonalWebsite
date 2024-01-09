@@ -10,10 +10,6 @@
 .vertical-timeline::before {
     background: black !important;
 }
-  
-.date {
-    color: rgb(123, 123, 123);
-}
 
 .icon-container {
     display: flex;
@@ -26,4 +22,23 @@
 .tech-badge {
     border-radius: 40% !important;
     font-size: .70em !important
+}
+
+.date {
+    color: #000000;
+}
+
+@media (max-width: 1168px) {
+    .date {
+      color: #fff; 
+    }
+  }
+
+.dark-theme .date {
+    color: #ffffff;
+    background-color: transparent !important;
+}
+
+.dark-theme .vertical-timeline::before {
+    background: #fff !important; /* Or any color you want for dark mode */
 }

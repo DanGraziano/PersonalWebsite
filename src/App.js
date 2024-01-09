@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
@@ -10,13 +10,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="App">
-      <Navigation />
+      <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <About />
       <Projects />
-      <Work />
+      <Work darkMode={darkMode} />
       <Contact />
       <Footer />
     </div>

@@ -6,9 +6,14 @@ import 'react-vertical-timeline-component/style.min.css';
 import './Work.css';
 import { Element } from 'react-scroll';
 
-export default function WorkExperience() {
+export default function Work({ darkMode }) {
+    let darkClassName = '';
+    if (darkMode) {
+      darkClassName += 'dark-theme';
+    }
+  
     return (
-    <Element name="work" className="work-section">
+    <Element name="work" className={`work-section ${darkClassName}`}>
         <Container>
             <Row className="justify-content-center">
                 <Col xs={12} className="text-center">
@@ -26,7 +31,7 @@ export default function WorkExperience() {
                             }}
                             contentArrowStyle={{ borderRight: '10px solid  rgb(33, 150, 243)' }}
                             date={exp.date}
-                            dateClassName="date"
+                            dateClassName={`date ${darkClassName}`}
                             iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
                             icon={
                                 <a href={exp.company_link} className="icon-container">

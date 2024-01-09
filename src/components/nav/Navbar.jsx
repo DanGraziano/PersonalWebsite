@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -5,9 +6,40 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import './Navbar.css';
 
-export default function Navigation() {
+export default function Navigation({ darkMode, setDarkMode }) {
+
+  const toggleMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-theme');
+    } 
+    else {
+      document.body.classList.remove('dark-theme');
+    }
+  }, [darkMode]);
+
+  const toggleIcon = () => {
+    if (darkMode) {
+      return <FaSun />;
+    } 
+    else {
+      return <FaMoon />;
+    }
+  }
+
+  let navbarClass = "bg-light";
+  let navbarVariant = "light";
+
+  if (darkMode) {
+    navbarClass = "bg-dark";
+    navbarVariant = "dark";
+  }
+
   return (
-      <Navbar expand="lg" className="bg-light" variant="light" fixed="top">
+      <Navbar expand="lg" className={navbarClass} variant={navbarVariant} fixed="top">
         <Container className="navbar-container">
           <Navbar.Brand>
             
@@ -21,8 +53,9 @@ export default function Navigation() {
 
           </Navbar.Brand>
 
-          <Nav.Link href=""><FaMoon /></Nav.Link>
-          <Nav.Link href=""><FaSun /></Nav.Link>
+          <Nav.Link onClick={toggleMode}>
+            {toggleIcon()}
+          </Nav.Link>
           {/* TODO - implement dark/light modes */}
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
