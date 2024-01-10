@@ -42,3 +42,15 @@
 .dark-theme #formName, .dark-theme #formBasicEmail, .dark-theme #formMessage {
   box-shadow: 3px 3px 10px rgb(42, 6, 205) !important;
 }
+
+.success-message {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.fail-message {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  color: red;
+  font-weight: bolder;
+}
