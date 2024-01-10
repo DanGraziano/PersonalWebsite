@@ -27,11 +27,28 @@ export default function Projects({ darkMode }) {
                     <Col xs={12} sm={6} lg={3} className="d-flex justify-content-center">
                         <Card style={{ width: '18rem' }} className="project-card">
                             <Card.Img variant="top" src={project.imageUrl} />
-                            <Card.Body>
+                            <Card.Body className="flex-grow">
                                 <Card.Title>{project.title}</Card.Title>
                                 <Card.Text>{project.description}</Card.Text>
-                                <div className="text-center">
-                                    <a href="https://github.com/DanGraziano" className ="learn-more-btn" ><Button variant="primary">Learn more</Button></a>
+                                <p>
+                                {project.technologies.map((tech, index) => (
+                                    <p 
+                                        key={index} 
+                                        className="badge px-3 py-1 me-2"
+                                        style={{ 
+                                            background: tech.backCol,
+                                            color: tech.textCol,
+                                        }}
+                                        >
+                                    {tech.name}
+                                    </p>
+                                ))}
+                            </p>
+                                
+                                <div className="button-wrapper text-center">
+                                    <a href={project.link} className ="learn-more-button">
+                                        <Button variant="primary">Learn more</Button>
+                                    </a>
                                 </div>
                             </Card.Body>
                         </Card>

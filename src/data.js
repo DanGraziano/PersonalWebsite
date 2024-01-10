@@ -6,6 +6,7 @@ import Placeholder from './assets/holder.svg';
 import RhythmRun from './assets/RhythmRun.png';
 import pricetracker from './/assets/pricetracker.png';
 import portland_brewery from './assets/portland_brewery.jpg';
+import website from './assets/website-image.png';
 
 export const technologies = {
     html: {
@@ -200,5 +201,19 @@ export const projectsData = [
           technologies.python,
         ]
     },
+
+    {
+      title: "Personal Website",
+      description: "A personal portfolio website that introduces myself to potential employers and showcases my skills, work experience, and projects.",
+      imageUrl: website, 
+      link: "https://github.com/DanGraziano/PersonalWebsite",
+      technologies: [
+        technologies.html,
+        technologies.css,
+        technologies.bootstrap,
+        technologies.react,
+        technologies.javascript,
+      ]
+  },
 ];
 
