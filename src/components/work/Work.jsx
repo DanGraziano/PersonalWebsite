@@ -36,7 +36,7 @@ export default function Work({ darkMode }) {
                             contentArrowStyle={{ borderRight: '10px solid  rgb(33, 150, 243)' }}
                             date={exp.date}
                             dateClassName={`date ${darkClassName}`}
-                            iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+                            iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff', boxShadow: boxShadow }}
                             icon={
                                 <a href={exp.company_link} className="icon-container">
 
