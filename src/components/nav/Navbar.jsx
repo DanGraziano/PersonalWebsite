@@ -5,6 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import './Navbar.css';
+import BlackComputer from '../../assets/logo/dan-graziano-black-computer.png';
+import WhiteComputer from '../../assets/logo/dan-graziano-white-computer.png';
+
 
 export default function Navigation({ darkMode, setDarkMode }) {
 
@@ -32,10 +35,12 @@ export default function Navigation({ darkMode, setDarkMode }) {
 
   let navbarClass = "bg-light";
   let navbarVariant = "light";
+  let logo = BlackComputer;
 
   if (darkMode) {
     navbarClass = "bg-dark";
     navbarVariant = "dark";
+    logo = WhiteComputer;
   }
 
   return (
@@ -48,15 +53,10 @@ export default function Navigation({ darkMode, setDarkMode }) {
               spy={true} 
               smooth={true} 
               duration={500} >
-              DG {/* TODO - replace DG with my picture or fancy text */}
+                <img src={logo} alt="Dan Graziano" className="nav-logo" />
             </Link>
 
           </Navbar.Brand>
-
-          <Nav.Link onClick={toggleMode}>
-            {toggleIcon()}
-          </Nav.Link>
-          {/* TODO - implement dark/light modes */}
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -103,9 +103,14 @@ export default function Navigation({ darkMode, setDarkMode }) {
                 className="nav-link">
                 Contact
               </Link>
-
             </Nav>
+
+            <Nav.Link onClick={toggleMode} className='nav-toggle'>
+              {toggleIcon()}
+            </Nav.Link>
+
           </Navbar.Collapse>
+
         </Container>
       </Navbar>
     );
