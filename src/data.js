@@ -172,9 +172,9 @@ export const experiences = [
 export const projectsData = [
     {
         title: "E-Commerce Price Tracker",
-        description: "A price tracking tool to automatically scrape product and pricing information from select retail websites and upload the data to a Google spreadsheet to allow for deeper analysis.",
+        description: "A price tracking tool to automatically scrape product and pricing information from select retail websites and upload the data to a Google spreadsheet.",
         imageUrl: pricetracker, 
-        link: "",
+        link: "https://github.com/DanGraziano/HDwebscraper",
         technologies: [
           technologies.python,
         ]
@@ -182,7 +182,7 @@ export const projectsData = [
 
     {
         title: "RhythmRun Android App",
-        description: "An Android running app that can measure time, pace, and distance, and is designed to help athletes maintain a more consistent cadence by implementing a built-in metronome.",
+        description: "A running app to help athletes maintain a more consistent cadence by implementing a built-in metronome.",
         imageUrl: RhythmRun, 
         link: "https://github.com/DanGraziano/RhythmRun",
         technologies: [

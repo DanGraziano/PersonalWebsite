@@ -26,11 +26,11 @@ export default function Projects({ darkMode }) {
                 {projectsData.map((project) => (
                     <Col xs={12} sm={6} lg={3} className="d-flex justify-content-center">
                         <Card style={{ width: '18rem' }} className="project-card">
-                            <Card.Img variant="top" src={project.imageUrl} />
+                            <Card.Img className="card-image" variant="top" src={project.imageUrl} />
                             <Card.Body className="flex-grow">
                                 <Card.Title>{project.title}</Card.Title>
                                 <Card.Text>{project.description}</Card.Text>
-                                <p>
+                                <p className="tech-wrapper">
                                 {project.technologies.map((tech, index) => (
                                     <p 
                                         key={index} 
