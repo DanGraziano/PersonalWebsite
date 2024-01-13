@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "homepage": "https://dangraziano.github.io/PersonalWebsite/",
+  "homepage": "https://dangraziano.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +26,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "react-app-rewired": "^2.2.1"
   }
 }
