@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffb17669.css",
+    "main.js": "/static/js/main.1547aed1.js",
+    "static/media/website-image.png": "/static/media/website-image.7ed7c08a849d89d7f42e.png",
+    "static/media/RhythmRun.png": "/static/media/RhythmRun.7dc37e2be7d2a29ebc6a.png",
+    "static/media/portland_brewery.jpg": "/static/media/portland_brewery.9346ba926fc84b7d8fba.jpg",
+    "static/media/dark-mode-double-spiral.png": "/static/media/dark-mode-double-spiral.9710a6d0e01d61a1502a.png",
+    "static/media/double-spiral.png": "/static/media/double-spiral.fcc890e336d414156a52.png",
+    "static/media/blue-line-spiral.png": "/static/media/blue-line-spiral.f9308cdf93a4da60db0c.png",
+    "static/media/dark-mode-double-spiral-flipped.png": "/static/media/dark-mode-double-spiral-flipped.6d36c48dcf194f56f8d3.png",
+    "static/media/dan-photo.jpg": "/static/media/dan-photo.003c38180c98361fdb67.jpg",
+    "static/media/neu-logo.png": "/static/media/neu-logo.ec283550a97515845500.png",
+    "static/media/pricetracker.png": "/static/media/pricetracker.588d6027c85cd7561dae.png",
+    "static/media/flipped-spiral.png": "/static/media/flipped-spiral.8a1e080bcbe171e2b45d.png",
+    "static/media/spiral.png": "/static/media/spiral.d2beeea75fdfd6b06b04.png",
+    "static/media/survue-logo.png": "/static/media/survue-logo.44a6479e12cfd935233c.png",
+    "static/media/dan-graziano-white-computer.png": "/static/media/dan-graziano-white-computer.fe472941a94e8e5be694.png",
+    "static/media/dan-graziano-black-computer.png": "/static/media/dan-graziano-black-computer.9a1ff3a2d1015e720899.png",
+    "static/media/linkedin.svg": "/static/media/linkedin.c304a4148cde039a54532585f4d47b48.svg",
+    "static/media/github-white.svg": "/static/media/github-white.085c058195b19d89817c35ef23b21cea.svg",
+    "static/media/github.svg": "/static/media/github.ddc17b60f7ebc908b67241cca683ca01.svg",
+    "static/media/holder.svg": "/static/media/holder.9f43516cd832c2bd6a8ed90e1177db79.svg",
+    "index.html": "/index.html",
+    "main.ffb17669.css.map": "/static/css/main.ffb17669.css.map",
+    "main.1547aed1.js.map": "/static/js/main.1547aed1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffb17669.css",
+    "static/js/main.1547aed1.js"
+  ]
+}
